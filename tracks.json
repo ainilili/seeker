@@ -1,0 +1,19 @@
+{	
+'header':{
+			'method':'get',
+			'seacher':'com.nico.seeker.searcher.impl.NicoSearcher',
+			'uri':'http://blog.csdn.net/peoplelist.html',
+			'params':{'channelid':'0','page':'0'}
+		},
+'tracks':[
+			{'prefix':'div','paramName':'class','paramValue':'page_nav','type':'collect'},
+			{'prefix':'span','type':'unique','reset':'true','recycle':'true'},
+			{
+			'prefix':'dl',
+			'type':'collect',
+			'trackBeans':[
+				{'prefix':'dd','type':'collect'},
+				{'prefix':'a','paramName':'class','paramValue':'expert_name','type':'unique','recycle':'true'}	
+			]}		
+		]
+}
